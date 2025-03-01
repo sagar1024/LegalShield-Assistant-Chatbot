@@ -1,0 +1,5 @@
+# Ignore .env and config.py
+.env
+config.py
+
+alembic.ini
