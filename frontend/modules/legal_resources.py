@@ -8,10 +8,10 @@ def show():
 
     # List of resources
     resources = {
+        "India Legal Information": "https://indiankanoon.org/",
         "U.S. Federal Law": "https://www.usa.gov/federal-agencies",
         "UK Government Legal Services": "https://www.gov.uk/government/organisations",
         "European Union Legal Resources": "https://europa.eu/european-union/law_en",
-        "India Legal Information": "https://indiankanoon.org/",
         "Australian Legal Resources": "https://www.legislation.gov.au/"
     }
 
@@ -25,8 +25,8 @@ def show():
     guides = {
         "How to Write a Contract": "https://www.nolo.com/legal-encyclopedia/how-to-write-a-contract-29837.html",
         "Understanding NDAs": "https://www.rocketlawyer.com/article/what-is-an-nda.rl",
-        "How to Create a Will": "https://www.legalzoom.com/articles/how-to-write-a-will",
         "Divorce Law Guide": "https://www.nolo.com/legal-encyclopedia/divorce-law",
+        "How to Create a Will": "https://www.legalzoom.com/articles/how-to-write-a-will",
     }
 
     for title, url in guides.items():
@@ -37,9 +37,9 @@ def show():
 
     # List of legal databases for looking up laws
     laws = {
+        "Indian Legal Codes": "https://www.indiankanoon.org/",
         "U.S. Federal Laws": "https://www.law.cornell.edu/uscode/text",
         "UK Statutes": "https://www.legislation.gov.uk/",
-        "Indian Legal Codes": "https://www.indiankanoon.org/",
     }
 
     for title, url in laws.items():
