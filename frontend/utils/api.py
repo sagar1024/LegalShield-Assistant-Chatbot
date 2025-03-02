@@ -15,4 +15,18 @@ def get_ai_response(query):
     except requests.exceptions.RequestException as e:
         print(f"Chatbot API Error: {e}")
         return None
+
+def draft_legal_document(doc_type, details):
+    """Sends document details to the backend and receives the generated document."""
+    try:
+        response = requests.post(
+            f"{BASE_URL}/draft",
+            json={"document_type": doc_type, "details": details}
+        )
+        if response.status_code == 200:
+            return response.json().get("pdf_url", "Error generating document.")
+        return None
+    except requests.exceptions.RequestException as e:
+        print(f"Drafting API Error: {e}")
+        return None
     

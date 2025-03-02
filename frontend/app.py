@@ -61,7 +61,7 @@ st.markdown(
 navbar()
 
 # Sidebar Navigation
-st.sidebar.title("Navigation")
+st.sidebar.title("LegalShield")
 page = st.sidebar.radio("Navigate to", ["About page", "Chat with LegalShield Bot", "Legal Drafting", "FAQs", "Legal Resources"])
 
 # Load the selected page
