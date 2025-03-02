@@ -6,11 +6,11 @@ LegalShield is an AI-driven legal assistant designed to simplify legal processes
 
 ## Key Features  
 
-#### **AI-Powered Legal Chatbot**  
+#### **1. AI-Powered Legal Chatbot**  
 - Get instant responses to legal queries using **Gemini API**.  
 - User-friendly interface to ask questions about legal topics.  
 
-#### **Legal Document Drafting**  
+#### **2. Legal Document Drafting**  
 - Generate various legal documents such as:  
   - Contracts  
   - Wills  
@@ -18,29 +18,29 @@ LegalShield is an AI-driven legal assistant designed to simplify legal processes
   - Custom legal documents  
 - Interactive forms to collect necessary legal details.  
 
-#### **Document Review & Summarization**  
+#### **3. Document Review & Summarization**  
 - Upload legal documents for **AI-based analysis**.  
 - Get summaries and key insights from contracts and legal agreements.  
 
-#### **FAQ & Knowledge Base**  
+#### **4. FAQ & Knowledge Base**  
 - Provides AI-generated answers to common legal questions.  
 - Helps users understand legal concepts easily.  
 
-#### **Legal Resources**  
+#### **5. Legal Resources**  
 - A repository of legal guidelines, rights, and references.  
 
 ---
 
 ## Tech Stack  
 
-#### **Frontend**  
+#### **1. Frontend**  
 - **Streamlit**: Interactive web UI.  
 
-#### **Backend**  
+#### **2. Backend**  
 - **FastAPI**: Handles API requests and chatbot logic.  
 - **Gemini API**: AI-powered legal chatbot responses.  
 
-#### **Libraries & Tools**  
+#### **3. Libraries & Tools**  
 - **PyMuPDF**: Legal document analysis.  
 - **ReportLab**: PDF generation for legal documents.  
 
