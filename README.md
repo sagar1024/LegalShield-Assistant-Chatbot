@@ -50,6 +50,7 @@ LegalShield is an AI-driven legal assistant designed to simplify legal processes
 
 ### **1. Clone the Repository**  
 ```sh
+git init
 git clone https://github.com/sagar1024/Christ-CPCG-Hackathon.git
 cd Christ-CPCG-Hackathon
 ```
@@ -63,7 +64,7 @@ pip install -r requirements.txt
 
 ```sh
 cd backend
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 4. Run the Frontend (Streamlit)
