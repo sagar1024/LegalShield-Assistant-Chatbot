@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from schemas import DraftingRequest
-from services.drafting import generate_legal_document
+from app.schemas import DraftingRequest
+from app.services.drafting import generate_legal_document
 
 router = APIRouter()
 

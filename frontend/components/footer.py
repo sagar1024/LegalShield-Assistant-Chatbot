@@ -24,7 +24,7 @@ def footer():
             }
         </style>
         <div class="footer">
-            © 2025 LegalShield. All rights reserved. | <span class="hackathon">Hackathon 2025</span>
+            © 2025 LegalShield Chatbot. All rights reserved. | <span class="hackathon">Hackathon 2025</span>
         </div>
         """,
         unsafe_allow_html=True

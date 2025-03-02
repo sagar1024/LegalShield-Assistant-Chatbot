@@ -7,8 +7,7 @@ def get_ai_response(query):
     """Sends query to FastAPI backend and returns AI response."""
     try:
         response = requests.post(
-            f"{BASE_URL}/chatbot", 
-            json={"query": query}
+            f"{BASE_URL}/chatbot", json={"prompt": query}
         )
         if response.status_code == 200:
             return response.json().get("response", "No response received.")
@@ -16,4 +15,4 @@ def get_ai_response(query):
     except requests.exceptions.RequestException as e:
         print(f"Chatbot API Error: {e}")
         return None
-        
+    

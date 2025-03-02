@@ -1,10 +1,17 @@
-from fastapi import APIRouter
-from schemas import ChatbotRequest, ChatbotResponse
-from services.chatbot import get_ai_response
+from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel
+from app.services.chatbot import get_chatbot_response
 
 router = APIRouter()
 
-@router.post("/", response_model=ChatbotResponse)
-def chatbot(request: ChatbotRequest):
-    response = get_ai_response(request.query)
-    return {"response": response}
+class ChatRequest(BaseModel):
+    prompt: str
+
+@router.post("/chatbot")
+async def chat_with_bot(request: ChatRequest):
+    try:
+        response = get_chatbot_response(request.prompt)
+        # print("Route response:", response) #Debugging
+        return {"response": response}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing chatbot query: {str(e)}")
