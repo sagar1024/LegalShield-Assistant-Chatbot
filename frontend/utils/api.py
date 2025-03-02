@@ -30,3 +30,30 @@ def draft_legal_document(doc_type, details):
         print(f"Drafting API Error: {e}")
         return None
     
+def summarize_document(document, summary_length=100, focus_sections="", language="English"):
+    """
+    Send a document for summarization to the backend API.
+    """
+    try:
+        files = {"file": document}
+        data = {
+            "summary_length": summary_length,
+            "focus_sections": focus_sections,
+            "language": language,
+        }
+
+        response = requests.post(f"{BASE_URL}/summarize", files=files, data=data)
+
+        if response.status_code == 200:
+            #return response.json() #Returns the summary data
+            
+            summary_data = response.json()
+            
+            #Store summary in session state
+            st.session_state["document_summary"] = summary_data.get("summary", "")
+            return summary_data
+        else:
+            return None
+    except requests.exceptions.RequestException as e:
+        print(f"Summarization API Error: {e}")
+        return None

@@ -43,19 +43,10 @@ def generate_chatbot_reply(query: str) -> str:
         response.raise_for_status()
         result = response.json()
 
-        print("Gemini API Raw Response:", result)  # Debugging
+        #print("Gemini API Raw Response:", result)  # Debugging
 
-        # Correct parsing logic based on actual response
-        # if "candidates" in result and result["candidates"]:
-        #     return result["candidates"][0].get("content", {}).get("parts", [{}])[0].get("text", "No response.")
-        
         if "candidates" in result and result["candidates"]:
             return result["candidates"][0]["content"]["parts"][0]["text"]
-        
-        # try:
-        #     return result["candidates"][0]["content"]["parts"][0]["text"]
-        # except (IndexError, KeyError, TypeError):
-        #     return "Unexpected API response format."
         
         return "No valid response from API."
 

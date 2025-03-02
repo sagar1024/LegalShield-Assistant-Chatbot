@@ -1,18 +1,3 @@
-# import streamlit as st
-
-# def show():
-#     st.title("Frequently Asked Questions (FAQs)")
-
-#     faq_list = {
-#         "What kind of legal questions can I ask?": "You can ask about contracts, tenancy agreements, and basic legal rights.",
-#         "Is this chatbot a replacement for a lawyer?": "No, this chatbot provides general legal guidance but is not a substitute for professional legal advice.",
-#         "Can I generate legal documents?": "Yes, the chatbot can assist with basic legal document templates.",
-#     }
-
-#     for question, answer in faq_list.items():
-#         with st.expander(question):
-#             st.write(answer)
-
 import streamlit as st
 
 def show():

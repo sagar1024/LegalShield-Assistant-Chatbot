@@ -1,37 +1,3 @@
-# import os
-# from app.utils.pdf_generator import create_pdf
-
-# TEMPLATES = {
-#     "Contract": "This contract is made between {party_one} and {party_two}. Terms: {contract_terms}",
-#     "Will": "This is the last will of {testator_name}. Beneficiaries: {beneficiaries}. Assets: {assets}",
-#     "Non-Disclosure Agreement (NDA)": "This NDA is between {disclosing_party} and {receiving_party}. Terms: {nda_terms}",
-# }
-
-# def generate_legal_document(document_type: str, details: dict) -> str:
-#     """
-#     Generate a legal document based on the document type and user-provided details.
-    
-#     Args:
-#         document_type (str): Type of document (Contract, Will, NDA, etc.)
-#         details (dict): User-provided details (name, terms, etc.)
-
-#     Returns:
-#         str: Path to the generated PDF document.
-#     """
-#     if document_type not in TEMPLATES:
-#         raise ValueError("Unsupported document type.")
-
-#     # Fill the template with user-provided details
-#     document_text = TEMPLATES[document_type].format(**details)
-    
-#     # Generate a PDF
-#     pdf_filename = f"{document_type.replace(' ', '_').lower()}.pdf"
-#     pdf_path = os.path.join("generated_documents", pdf_filename)
-
-#     create_pdf(document_text, pdf_path)
-
-#     return pdf_path
-
 import os
 import requests
 from app.utils.pdf_generator import create_pdf
