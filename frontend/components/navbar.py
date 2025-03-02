@@ -20,3 +20,4 @@ def navbar():
         """,
         unsafe_allow_html=True
     )
+    
