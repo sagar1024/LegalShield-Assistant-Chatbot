@@ -50,8 +50,8 @@ LegalShield is an AI-driven legal assistant designed to simplify legal processes
 
 ### **1. Clone the Repository**  
 ```sh
-git clone https://github.com/your-repo/legalshield.git
-cd legalshield
+git clone https://github.com/sagar1024/Christ-CPCG-Hackathon.git
+cd Christ-CPCG-Hackathon
 ```
 
 ### 2. Install Dependencies
