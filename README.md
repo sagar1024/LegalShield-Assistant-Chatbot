@@ -60,14 +60,18 @@ cd Christ-CPCG-Hackathon
 pip install -r requirements.txt
 ```
 
-#### 3. Run the Backend (FastAPI)
+#### 3. Create an .env file in the backend
+
+Go to Google AI studio and create GeminiAPI Key and paste it in .env file.
+
+#### 4. Run the Backend (FastAPI)
 
 ```sh
 cd backend
 uvicorn app.main:app --reload
 ```
 
-#### 4. Run the Frontend (Streamlit)
+#### 5. Run the Frontend (Streamlit)
 ```sh
 cd frontend
 streamlit run app.py
