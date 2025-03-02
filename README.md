@@ -73,3 +73,16 @@ cd frontend
 streamlit run app.py
 ```
 
+## How the Application Works
+1. User selects a feature (Chatbot, Document Drafting, Review, FAQs).
+2. Chatbot provides instant responses to legal queries.
+3. Legal Document Drafting allows users to enter details and generate PDFs.
+4. Document Review analyzes uploaded legal documents.
+5. Legal Resources provides useful legal references.
+
+The entire system runs as an API-based application, ensuring speed, security, and efficiency.
+
+## Contributors
+
+Sagar Gurung
+CHRIST University, Bangalore
