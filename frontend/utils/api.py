@@ -46,7 +46,6 @@ def summarize_document(document, summary_length=100, focus_sections="", language
 
         if response.status_code == 200:
             #return response.json() #Returns the summary data
-            
             summary_data = response.json()
             
             #Store summary in session state

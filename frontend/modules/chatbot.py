@@ -14,7 +14,6 @@ def show():
     if st.button("Ask AI") and user_query.strip():
         response = get_ai_response(user_query)
         #print(response) #Debugging
-        
         chat_history.append({"user": user_query, "bot": response})
 
     # Display chat history
@@ -27,3 +26,4 @@ def show():
     if st.button("Clear Chat"):
         chat_history.clear()
         st.success("Chat history cleared.")
+        

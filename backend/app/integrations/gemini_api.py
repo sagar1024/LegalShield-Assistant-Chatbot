@@ -54,3 +54,4 @@ def generate_chatbot_reply(query: str) -> str:
         return f"Error: Failed to connect to Gemini API - {str(e)}"
     except KeyError:
         return "Error: Unexpected API response format."
+    

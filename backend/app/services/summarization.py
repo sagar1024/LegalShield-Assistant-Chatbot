@@ -17,11 +17,7 @@ async def process_document(file: io.BytesIO, summary_length: int, focus_sections
     for page in pdf_document:
         text_content += page.get_text("text") + "\n"
 
-    #Apply focus sections filtering(if focus section is given by user)
-    # if focus_sections:
-    #     combined_text = filter_focus_sections(combined_text, focus_sections)
-
-    # Generate summary
+    #Generate summary
     summary = await summarize_text(text_content, summary_length, language)
 
     return {

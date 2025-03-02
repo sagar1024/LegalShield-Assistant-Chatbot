@@ -31,3 +31,4 @@ def show():
             st.markdown(f"[Download Enhanced Document from Generated Documents in backend](/{pdf_url})")
         else:
             st.error("Failed to generate the document.")
+            
