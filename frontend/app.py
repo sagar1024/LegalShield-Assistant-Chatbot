@@ -1,7 +1,7 @@
 import streamlit as st
 from components.navbar import navbar
 from components.footer import footer
-from modules import about, faq, chatbot, legal_draft, legal_resources, summarization  # Importing the pages
+from modules import about, faq, chatbot, legal_draft, legal_resources, summarization
 
 # Set page config
 st.set_page_config(page_title="LegalShield — AI Legal Chatbot", page_icon="⚖️", layout="wide")
@@ -62,12 +62,24 @@ navbar()
 
 # Sidebar Navigation
 st.sidebar.title("LegalShield")
-page = st.sidebar.radio("Navigate to", ["About page", "Chat with LegalShield Bot", "Legal Drafting", "Document Review" ,"FAQs", "Legal Resources"])
+page = st.sidebar.radio("Navigate to", ["About page", "Chat with LegalShield", "Legal Drafting", "Document Review" ,"FAQs", "Legal Resources"])
+
+#Add Contact Info & Feedback in Sidebar
+st.sidebar.markdown("---")
+st.sidebar.markdown("### Contact Us")
+st.sidebar.markdown("""
+    **Email:** support@legalshield.com
+    """)
+
+#Feedback Section
+st.sidebar.markdown("### Share Your Feedback")
+if st.sidebar.button("Provide Feedback"):
+    st.sidebar.write("Thank you for your feedback! You can email us at feedback@legalshield.com.")
 
 # Load the selected page
 if page == "About page":
     about.show()
-elif page == "Chat with LegalShield Bot":
+elif page == "Chat with LegalShield":
     chatbot.show()
 elif page == "Legal Drafting":
     legal_draft.show()

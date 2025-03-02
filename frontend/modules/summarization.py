@@ -6,7 +6,7 @@ def render():
     st.title("Document Review")
     st.markdown(
         """
-        Upload your document to generate a concise summary.
+        Upload your document to generate a concise review.
         Supported formats: **PDF**, **Word**, **Excel**, **PowerPoint**.
         """
     )
@@ -37,7 +37,7 @@ def render():
             )
 
             if summary and "summary" in summary:
-                st.subheader("Generated Summary of Document")
+                st.subheader("Generated Review of Document")
                 st.write(summary["summary"])
             else:
                 st.error("Failed to generate summary. Please try again.")

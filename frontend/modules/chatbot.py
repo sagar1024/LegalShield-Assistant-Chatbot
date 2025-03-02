@@ -2,7 +2,7 @@ import streamlit as st
 from utils.api import get_ai_response
 
 def show():
-    st.title("LegalShield — Your Legal Assistant")
+    st.title("LegalShield — Your Favourite Legal Assistant")
 
     # Initialize chat history
     chat_history = st.session_state.setdefault("chat_history", [])

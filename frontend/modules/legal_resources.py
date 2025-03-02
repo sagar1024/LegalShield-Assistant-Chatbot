@@ -39,7 +39,7 @@ def show():
     laws = {
         "Indian Legal Codes": "https://www.indiankanoon.org/",
         "U.S. Federal Laws": "https://www.law.cornell.edu/uscode/text",
-        "UK Statutes": "https://www.legislation.gov.uk/",
+        "United Kingdom Statutes": "https://www.legislation.gov.uk/",
     }
 
     for title, url in laws.items():
