@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 #### 3. Create an .env file in the backend
 
-Go to Google AI studio and create GeminiAPI Key and paste it in .env file.
+Go to Google AI studio and create GeminiAPI Key and paste it in .env file. Create a varialble GEMINI_API_KEY and assign it your api key.
 
 #### 4. Run the Backend (FastAPI)
 
